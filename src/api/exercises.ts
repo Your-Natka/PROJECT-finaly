@@ -1,15 +1,25 @@
-import { showLoader } from '../components/loader';
+import { api } from './instance';
 
-import { hideLoader } from '../components/loader';
+export function getExercises(params: {
+  bodypart?: string;
+  muscles?: string;
+  equipment?: string;
+  keyword?: string;
+  page?: number;
+  limit?: number;
+}) {
+  const query = new URLSearchParams();
 
-export async function getExercises() {
-  try {
-    showLoader();
+  if (params.bodypart) query.append('bodypart', params.bodypart);
 
-    const response = await fetch(url);
+  if (params.muscles) query.append('muscles', params.muscles);
 
-    return response.json();
-  } finally {
-    hideLoader();
-  }
+  if (params.equipment) query.append('equipment', params.equipment);
+
+  if (params.keyword) query.append('keyword', params.keyword);
+
+  query.append('page', String(params.page ?? 1));
+  query.append('limit', String(params.limit ?? 10));
+
+  return api(`/exercises?${query.toString()}`);
 }
