@@ -1,0 +1,15 @@
+import './js/api';
+import './js/mobile-menu';
+import './js/quote';
+import './js/filters';
+import './js/search-form';
+import './js/modal-exercises';
+import './js/modal-rating';
+import './js/modal-team';
+import './js/scroll-up';
+import './js/loader';
+import './js/favorites';
+import './js/subscribe';
+import './js/exercises';
+import './js/hero';
+import './js/modal-bmi';

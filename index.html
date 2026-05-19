@@ -3,55 +3,33 @@
 
 <head>
   <meta charset="UTF-8" />
-
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <meta name="description"
+    content="Elevate your fitness journey with our sports app! Dive into a world of dynamic workouts, personalized exercises, and a comprehensive inventory of fitness gear. Whether you're a seasoned athlete or just starting, our app is your go-to destination for effective sports exercises and top-notch equipment. Achieve your fitness goals in style, download now!" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
   <title>Your Energy</title>
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/src/css/styles.css">
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
-  <!-- Global loader -->
-  <div class="loader-backdrop is-hidden" id="loader" aria-hidden="true">
-    <span class="loader"></span>
-  </div>
-
-  <!-- Header -->
-  <load src="./src/partials/header.html"></load>
+  <header>
+    <load src="./partials/header.html"></load>
+  </header>
 
   <main>
-    <!-- Hero -->
-    <load src="./src/partials/hero.html"></load>
-
-    <!-- Filters -->
-    <load src="./src/partials/filters.html"></load>
-
-    <!-- Exercises -->
-    <load src="./src/partials/exercises.html"></load>
-
-    <!-- Quote -->
-    <load src="./src/partials/quote.html"></load>
+    <load src="./partials/hero.html"></load>
+    <load src="./partials/exercises.html"></load>
+    <load src="./partials/modal-bmi.html"></load>
   </main>
 
-  <!-- Footer -->
-  <load src="./src/partials/footer.html"></load>
+  <footer>
+    <load src="./partials/footer.html"></load>
 
-  <!-- Modal -->
-  <div id="modal-root"></div>
+  </footer>
 
-  <!-- Scroll top -->
-  <button type="button" class="scroll-top is-hidden" id="scroll-top" aria-label="Scroll to top">
-    ↑
-  </button>
-
-  <script type="module" src="./src/main.ts"></script>
+  <script type="module" src="src/main.js"></script>
 </body>
 
 </html>
