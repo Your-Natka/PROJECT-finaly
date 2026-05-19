@@ -1,128 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/styles-DvPDDfy5.css">
-  </head>
-  <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/vanilla-app-template/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Your Energy</title>
+  <script type="module" crossorigin src="/vanilla-app-template/assets/index-0YXKRIDn.js"></script>
+  <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-Y-mJ1U4f.css">
+</head>
+
+
+<body>
+  <!-- GLOBAL LOADER -->
+  <div class="loader-backdrop is-hidden" id="loader">
+
+    <span class="loader"></span>
+
   </div>
+
+  <!-- HEADER -->
+  <header class="header">
+
+    <div class="container header-container">
+
+        <a href="./index.html" class="logo">
+            ENERGY
+        </a>
+
+        <nav class="nav">
+
+            <a href="./index.html">
+                Home
+            </a>
+
+            <a href="./favorites.html">
+                Favorites
+            </a>
+
+        </nav>
+
+        <ul class="social-list">
+
+            <li>
+                <a href="https://www.facebook.com/goITclub/" target="_blank">
+                    FB
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.instagram.com/goitclub/" target="_blank">
+                    IG
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.youtube.com/c/GoIT" target="_blank">
+                    YT
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
 </header>
 
+  <main>
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/vanilla-app-template/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
+    <!-- HERO -->
+    <section class="section hero">
+
+    <div class="container">
+
+        <h1 class="hero-title">
+            Get Body in shape, Stay healthy
+        </h1>
+
+        <p class="hero-text">
+            Transform your physique and embrace a healthier lifestyle.
+        </p>
+
+        <ul class="hero-tags">
+
+            <li>#Sport</li>
+            <li>#Healthy</li>
+            <li>#Workout</li>
+            <li>#Fitness</li>
+
+        </ul>
+
     </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
-  </div>
+
 </section>
 
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
-      </li>
-    </ul>
-  </div>
-</article>
+    <!-- FILTERS -->
+    <section class="section filters">
 
-    </main>
+    <div class="container">
 
-    <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
-  </div>
+        <div class="filters-top">
+
+            <h2 class="section-title">
+                Exercises
+            </h2>
+
+            <div class="filters-buttons">
+
+                <button class="filter-btn active" data-filter="Muscles">
+                    Muscles
+                </button>
+
+                <button class="filter-btn" data-filter="Body parts">
+                    Body parts
+                </button>
+
+                <button class="filter-btn" data-filter="Equipment">
+                    Equipment
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- SEARCH -->
+        <form class="search-form">
+
+            <input type="text" placeholder="Search" name="keyword" />
+
+            <button type="submit">
+                Search
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+    <!-- EXERCISES -->
+    <section class="section exercises">
+
+    <div class="container">
+
+        <!-- dynamic categories/exercises -->
+        <ul class="exercises-list" id="content-container"></ul>
+
+        <!-- pagination -->
+        <div id="pagination"></div>
+
+    </div>
+
+</section>
+
+    <!-- QUOTE -->
+    <section class="section quote">
+
+    <div class="container">
+
+        <div class="quote-card">
+
+            <h3>
+                Quote of the day
+            </h3>
+
+            <p id="quote-text">
+                Loading...
+            </p>
+
+            <span id="quote-author"></span>
+
+        </div>
+
+    </div>
+
+</section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-wrapper">
+
+            <a href="./index.html" class="logo">
+                ENERGY
+            </a>
+
+            <form class="subscribe-form">
+
+                <input type="email" name="email" placeholder="Email" required
+                    pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" />
+
+                <button type="submit">
+                    Send
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
 </footer>
 
+  <!-- MODAL ROOT -->
+  <div id="modal-root"></div>
 
-  </body>
+  <!-- SCROLL TOP -->
+  <button class="scroll-top is-hidden" id="scroll-top">
+    ↑
+  </button>
+
+
+</body>
+
 </html>
