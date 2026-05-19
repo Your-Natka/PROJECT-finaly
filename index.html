@@ -3,56 +3,54 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Your Energy</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
 </head>
 
-
 <body>
-  <!-- GLOBAL LOADER -->
-  <div class="loader-backdrop is-hidden" id="loader">
-
+  <!-- Global loader -->
+  <div class="loader-backdrop is-hidden" id="loader" aria-hidden="true">
     <span class="loader"></span>
-
   </div>
 
-  <!-- HEADER -->
-  <load src="./src/partials/header.html" />
+  <!-- Header -->
+  <load src="./src/partials/header.html"></load>
 
   <main>
+    <!-- Hero -->
+    <load src="./src/partials/hero.html"></load>
 
-    <!-- HERO -->
-    <load src="./src/partials/hero.html" />
+    <!-- Filters -->
+    <load src="./src/partials/filters.html"></load>
 
-    <!-- FILTERS -->
-    <load src="./src/partials/filters.html" />
+    <!-- Exercises -->
+    <load src="./src/partials/exercises.html"></load>
 
-    <!-- EXERCISES -->
-    <load src="./src/partials/exercises.html" />
-
-    <!-- QUOTE -->
-    <load src="./src/partials/quote.html" />
-
+    <!-- Quote -->
+    <load src="./src/partials/quote.html"></load>
   </main>
 
-  <!-- FOOTER -->
-  <load src="./src/partials/footer.html" />
+  <!-- Footer -->
+  <load src="./src/partials/footer.html"></load>
 
-  <!-- MODAL ROOT -->
+  <!-- Modal -->
   <div id="modal-root"></div>
 
-  <!-- SCROLL TOP -->
-  <button class="scroll-top is-hidden" id="scroll-top">
+  <!-- Scroll top -->
+  <button type="button" class="scroll-top is-hidden" id="scroll-top" aria-label="Scroll to top">
     ↑
   </button>
 
   <script type="module" src="/src/main.ts"></script>
-
 </body>
 
 </html>

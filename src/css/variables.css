@@ -1,5 +1,6 @@
 :root {
   --bg: #ffffff;
   --text: #111111;
-  --accent: #5f33e1;
+  --gray: #f4f4f4;
+  --radius: 12px;
 }
