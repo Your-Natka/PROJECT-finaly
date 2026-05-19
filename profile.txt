@@ -1,0 +1,57 @@
+src/
+│
+├── common/
+│   ├── header.html
+│   ├── footer.html
+│   └── loader.html
+│
+├── pages/
+│   ├── home.ts
+│   └── favorites.ts
+│
+├── api/
+│   ├── exercises.ts
+│   ├── filters.ts
+│   ├── quote.ts
+│   ├── subscription.ts
+│   └── rating.ts
+│
+├── components/
+│   ├── header.ts
+│   ├── footer.ts
+│   ├── hero.ts
+│   ├── filters.ts
+│   ├── categories.ts
+│   ├── exercises.ts
+│   ├── modal.ts
+│   ├── pagination.ts
+│   ├── loader.ts
+│   └── scrollTop.ts
+│
+├── utils/
+│   ├── storage.ts
+│   ├── debounce.ts
+│   ├── refs.ts
+│   └── validators.ts
+│
+├── styles/
+│   ├── reset.css
+│   ├── common.css
+│   ├── container.css
+│   ├── header.css
+│   ├── footer.css
+│   ├── home.css
+│   ├── modal.css
+│   ├── pagination.css
+│   └── styles.css
+│
+├── assets/
+│   ├── icons/
+│   ├── images/
+│   └── sprite.svg
+│
+├── types/
+│   ├── exercise.ts
+│   └── filter.ts
+│
+└── main.ts
