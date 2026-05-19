@@ -1,4 +1,4 @@
-import { api } from './instance';
+import { apiRequest } from './instance';
 
 export function getExercises(params: {
   bodypart?: string;
@@ -21,5 +21,5 @@ export function getExercises(params: {
   query.append('page', String(params.page ?? 1));
   query.append('limit', String(params.limit ?? 10));
 
-  return api(`/exercises?${query.toString()}`);
+  return apiRequest(`/exercises?${query.toString()}`);
 }

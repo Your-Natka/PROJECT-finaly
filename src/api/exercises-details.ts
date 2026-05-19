@@ -1,5 +1,5 @@
-import { api } from './instance';
+import { apiRequest } from './instance';
 
 export function getExerciseById(id: string) {
-  return api(`/exercises/${id}`);
+  return apiRequest(`/exercises/${id}`);
 }

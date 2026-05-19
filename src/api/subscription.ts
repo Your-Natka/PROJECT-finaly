@@ -1,7 +1,7 @@
-import { api } from './instance';
+import { apiRequest } from './instance';
 
 export function subscribe(email: string) {
-  return api('/subscription', {
+  return apiRequest('/subscription', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

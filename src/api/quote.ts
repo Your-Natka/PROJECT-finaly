@@ -1,5 +1,5 @@
-import { api } from './instance';
+import { apiRequest } from './instance';
 
 export function getQuote() {
-  return api('/quote');
+  return apiRequest('/quote');
 }
