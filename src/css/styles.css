@@ -4,17 +4,17 @@
   | default @import url()
   |============================
 */
-@import url('./reset.css');
-@import url('./variables.css');
-@import url('./base.css');
-@import url('./container.css');
+@import './reset.css';
+@import './variables.css';
+@import './base.css';
+@import './container.css';
 
-@import url('./header.css');
-@import url('./footer.css');
+@import './header.css';
+@import './footer.css';
 
-@import url('./hero.css');
-@import url('./filters.css');
-@import url('./exercises.css');
+@import './hero.css';
+@import './filters.css';
+@import './exercises.css';
 
-@import url('./modal.css');
-@import url('./pagination.css');
+@import './modal.css';
+@import './pagination.css';

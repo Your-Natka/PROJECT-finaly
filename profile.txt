@@ -45,13 +45,53 @@ src/
 │   ├── pagination.css
 │   └── styles.css
 │
-├── assets/
+├── img/
 │   ├── icons/
 │   ├── images/
 │   └── sprite.svg
 │
 ├── types/
+│   ├── api.ts
 │   ├── exercise.ts
-│   └── filter.ts
+│   ├── filter.ts
+│   └── quote.ts
 │
 └── main.ts
+
+
+Team split
+1
+
+Header + burger
+
+2
+
+Hero + responsive
+
+3
+
+Filters API
+
+4
+
+Categories render
+
+5
+
+Exercises render
+
+6
+
+Modal + favorites
+
+7
+
+Pagination + search
+
+8
+
+Quote + subscription
+
+9
+
+Styles integration + loader + scrollTop + QA

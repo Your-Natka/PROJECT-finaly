@@ -14,7 +14,8 @@
     "postcss": "^8.4.41",
     "postcss-sort-media-queries": "^5.2.0",
     "prettier": "^3.8.3",
-    "vite": "^5.4.6"
+    "vite": "^5.4.6",
+    "vite-plugin-html-inject": "^1.1.2"
   },
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
@@ -22,7 +23,6 @@
     "basiclightbox": "^5.0.4",
     "lodash.debounce": "^4.0.8",
     "tui-pagination": "^3.4.1",
-    "vite-plugin-full-reload": "^1.2.0",
-    "vite-plugin-html-inject": "^1.1.2"
+    "vite-plugin-full-reload": "^1.2.0"
   }
 }
