@@ -7,214 +7,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Your Energy</title>
-  <script type="module" crossorigin src="/vanilla-app-template/assets/index-0YXKRIDn.js"></script>
-  <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-Y-mJ1U4f.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <script type="module" crossorigin src="/vanilla-app-template/assets/index-BcCHc94r.js"></script>
+  <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-BdUppMJ8.css">
 </head>
 
-
 <body>
-  <!-- GLOBAL LOADER -->
-  <div class="loader-backdrop is-hidden" id="loader">
-
+  <!-- Global loader -->
+  <div class="loader-backdrop is-hidden" id="loader" aria-hidden="true">
     <span class="loader"></span>
-
   </div>
 
-  <!-- HEADER -->
-  <header class="header">
-
-    <div class="container header-container">
-
-        <a href="./index.html" class="logo">
-            ENERGY
-        </a>
-
-        <nav class="nav">
-
-            <a href="./index.html">
-                Home
-            </a>
-
-            <a href="./favorites.html">
-                Favorites
-            </a>
-
-        </nav>
-
-        <ul class="social-list">
-
-            <li>
-                <a href="https://www.facebook.com/goITclub/" target="_blank">
-                    FB
-                </a>
-            </li>
-
-            <li>
-                <a href="https://www.instagram.com/goitclub/" target="_blank">
-                    IG
-                </a>
-            </li>
-
-            <li>
-                <a href="https://www.youtube.com/c/GoIT" target="_blank">
-                    YT
-                </a>
-            </li>
-
-        </ul>
-
-    </div>
-
-</header>
+  <!-- Header -->
+  <load src="./src/partials/header.html"></load>
 
   <main>
+    <!-- Hero -->
+    <load src="./src/partials/hero.html"></load>
 
-    <!-- HERO -->
-    <section class="section hero">
+    <!-- Filters -->
+    <load src="./src/partials/filters.html"></load>
 
-    <div class="container">
+    <!-- Exercises -->
+    <load src="./src/partials/exercises.html"></load>
 
-        <h1 class="hero-title">
-            Get Body in shape, Stay healthy
-        </h1>
-
-        <p class="hero-text">
-            Transform your physique and embrace a healthier lifestyle.
-        </p>
-
-        <ul class="hero-tags">
-
-            <li>#Sport</li>
-            <li>#Healthy</li>
-            <li>#Workout</li>
-            <li>#Fitness</li>
-
-        </ul>
-
-    </div>
-
-</section>
-
-    <!-- FILTERS -->
-    <section class="section filters">
-
-    <div class="container">
-
-        <div class="filters-top">
-
-            <h2 class="section-title">
-                Exercises
-            </h2>
-
-            <div class="filters-buttons">
-
-                <button class="filter-btn active" data-filter="Muscles">
-                    Muscles
-                </button>
-
-                <button class="filter-btn" data-filter="Body parts">
-                    Body parts
-                </button>
-
-                <button class="filter-btn" data-filter="Equipment">
-                    Equipment
-                </button>
-
-            </div>
-
-        </div>
-
-        <!-- SEARCH -->
-        <form class="search-form">
-
-            <input type="text" placeholder="Search" name="keyword" />
-
-            <button type="submit">
-                Search
-            </button>
-
-        </form>
-
-    </div>
-
-</section>
-
-    <!-- EXERCISES -->
-    <section class="section exercises">
-
-    <div class="container">
-
-        <!-- dynamic categories/exercises -->
-        <ul class="exercises-list" id="content-container"></ul>
-
-        <!-- pagination -->
-        <div id="pagination"></div>
-
-    </div>
-
-</section>
-
-    <!-- QUOTE -->
-    <section class="section quote">
-
-    <div class="container">
-
-        <div class="quote-card">
-
-            <h3>
-                Quote of the day
-            </h3>
-
-            <p id="quote-text">
-                Loading...
-            </p>
-
-            <span id="quote-author"></span>
-
-        </div>
-
-    </div>
-
-</section>
-
+    <!-- Quote -->
+    <load src="./src/partials/quote.html"></load>
   </main>
 
-  <!-- FOOTER -->
-  <footer class="footer">
+  <!-- Footer -->
+  <load src="./src/partials/footer.html"></load>
 
-    <div class="container">
-
-        <div class="footer-wrapper">
-
-            <a href="./index.html" class="logo">
-                ENERGY
-            </a>
-
-            <form class="subscribe-form">
-
-                <input type="email" name="email" placeholder="Email" required
-                    pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" />
-
-                <button type="submit">
-                    Send
-                </button>
-
-            </form>
-
-        </div>
-
-    </div>
-
-</footer>
-
-  <!-- MODAL ROOT -->
+  <!-- Modal -->
   <div id="modal-root"></div>
 
-  <!-- SCROLL TOP -->
-  <button class="scroll-top is-hidden" id="scroll-top">
+  <!-- Scroll top -->
+  <button type="button" class="scroll-top is-hidden" id="scroll-top" aria-label="Scroll to top">
     ↑
   </button>
-
 
 </body>
 
